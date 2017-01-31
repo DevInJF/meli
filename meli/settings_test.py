@@ -38,8 +38,18 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ads',
-    'vendors.meli'
+    'meli_account',
+    'vendors.meli',
+    'user'
 ]
+
+
+AUTHENTICATION_BACKENDS = [
+    'user.backend.UserModelEmailBackend',    # Login w/ email
+    'django.contrib.auth.backends.ModelBackend',    # Login w/ username
+]
+
+LOGIN_URL = '/user/login'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
