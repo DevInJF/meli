@@ -134,3 +134,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+#####MERCADO LIVRE
+MELI_CLIENT_ID = 7330605392252389
+MELI_CLIENTE_SECRET = ''
