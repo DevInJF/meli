@@ -15,9 +15,19 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.conf import settings
+
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('ads.urls', namespace='ads', app_name='ads')),
-    url(r'^user/', include('user.urls', namespace='user', app_name='user'))
+    url(r'^user/', include('user.urls', namespace='user', app_name='user')),
+    url(r'^meli_account/', include('meli_account.urls', namespace='meli_account', app_name='meli_account'))
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns += [
+        url(r'^__debug__/', include(debug_toolbar.urls)),
+    ]

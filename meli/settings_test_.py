@@ -25,7 +25,7 @@ SECRET_KEY = 'hefmimod=_^$@*gl=gf-^pbus_fsqnr@v@11pql0p$#muqh+35'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['meli-ramonbrbs.c9users.io']
 
 
 # Application definition
