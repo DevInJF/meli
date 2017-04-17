@@ -1,0 +1,2 @@
+class MeliRequestExcetion(Exception):
+    pass

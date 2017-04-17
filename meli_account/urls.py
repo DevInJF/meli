@@ -7,6 +7,7 @@ urlpatterns = [
 
     url(r'^add_account', views.add_account, name='meli_account_add'),
     url(r'^get_callback', views.get_callback, name='meli_account_get_callback'),
+    url(r'^copy_account', views.copy_account, name='meli_account_copy'),
 
 ]
 

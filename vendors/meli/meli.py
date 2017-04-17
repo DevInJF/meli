@@ -52,6 +52,7 @@ class Meli(object):
             self.access_token = response_info['access_token']
             if 'refresh_token' in response_info:
                 self.refresh_token = response_info['refresh_token']
+                self.expires_in = response_info['expires_in']
             else:
                 self.refresh_token = '' # offline_access not set up
                 self.expires_in = response_info['expires_in']
